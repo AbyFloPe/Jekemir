@@ -1,0 +1,83 @@
+/*VENTANA EMERGENTE ESTILO*/
+.popup {
+	position: absolute;
+	top: -150%;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%, -50%) scale(1.25);
+	width: 380px;
+	padding: 20px 30px;
+	background: #E2C0A1;
+	opacity: 80%;
+	box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	transition: top 0ms ease-in-out 200ms, 
+				opacity 200ms ease-in-out 0ms, 
+				transform 20ms ease-in-out 0ms;
+}
+.popup.active {
+	top: 50%;
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+	transition: top 0ms ease-in-out 200ms, 
+				opacity 200ms ease-in-out 0ms, 
+				transform 20ms ease-in-out 0ms;
+}
+
+.popup .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.popup .form h2{
+	text-align: center;
+	font-family: serif;
+	color: black;
+	margin: 10px 0px 20px;
+	font-size: 25px;
+}
+.popup .form .form-element {
+	margin: 15px 0px;
+}
+.popup .form .form-element label{
+	font-size: 16px;
+	font-family: serif;
+}
+.popup .form .form-element input[type="text"]{
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid;
+	border-color: #774B3D;
+	border-radius: 5px;
+	background-color: #FFE5D2;
+}
+.popup .form .form-element input[type="checkbox"]{
+	margin-right: 5px;
+}
+.popup .form .form-element button {
+	background-color: #EDAB37;
+	width: 100%;
+	height: 40px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	font-family: serif;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.popup .form .form-element button a{
+	text-decoration-line: none;
+	text-decoration: none;
+	font-family: serif;
+	color: black;
+}
